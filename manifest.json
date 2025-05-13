@@ -11,7 +11,10 @@
     {
       "matches": [
         "*://*.youtube.com/*",
-        "*://*.bilibili.com/*"
+        "*://*.bilibili.com/*",
+        "*://*.netflix.com/*",
+        "*://*.disneyplus.com/*",
+        "*://*.hulu.com/*"
       ],
       "js": ["content.js"]
     }

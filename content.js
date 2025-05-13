@@ -44,8 +44,8 @@ function createOverlay(previousLetters, newLetters) {
     margin-bottom: 2rem;
     letter-spacing: 0.5rem;
     color: #fff;
-  `;
-  lettersDisplay.textContent = newLetters.slice(0, 2) + ' ' + newLetters.slice(2, 4);
+    `;
+  lettersDisplay.innerHTML = `${newLetters.slice(0, 2)}&nbsp;&nbsp;&nbsp;${newLetters.slice(2, 4)}`;
 
   const inputContainer = document.createElement('div');
   inputContainer.style.cssText = `
