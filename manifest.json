@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity++",
+  "version": "1.0",
+  "description": "Hold on tight before watching youtube",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.bilibili.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+} 
