@@ -137,7 +137,7 @@ function createOverlay(previousLetters, newLetters) {
       }
 
       if (window.incorrectAttempts >= 2) {
-        message.textContent = `Incorrect: ${previousLetters.substring(0, 2)} ${previousLetters.substring(2, 4)}.`;
+        message.textContent = `Incorrect: ${previousLetters.substring(0, 2)} ${previousLetters.substring(2, 4)}`;
         message.style.color = '#ff4444';
         // Clear all inputs
         inputs.forEach(input => input.value = '');
@@ -150,7 +150,7 @@ function createOverlay(previousLetters, newLetters) {
         };
         document.addEventListener('keydown', spaceHandler);
       } else {
-        message.textContent = 'Incorrect letters. Try again.';
+        message.textContent = `Incorrect: ${previousLetters.substring(0, 2)}`;
         message.style.color = '#ff4444';
         // Clear all inputs
         inputs.forEach(input => input.value = '');
